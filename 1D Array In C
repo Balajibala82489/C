@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int* ptr;
+    int size;
+    int input;
+    int count;
+    int sum=0;
+    
+    scanf("%d",&size);
+    ptr=(int*)malloc(size*sizeof(int)); 
+    
+    do {
+ 
+        scanf("%d",&input);
+        sum=sum+input;
+        count=count+1;
+    } while (count<size);
+    
+    
+    printf("%d",sum);
+    return 0;
+}
